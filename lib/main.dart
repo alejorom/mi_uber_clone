@@ -19,6 +19,11 @@ class _UberCloneState extends State<UberClone> {
       debugShowCheckedModeBanner: false,
       title: 'UberClone',
       initialRoute: 'home',
+
+      // Fuentes gratis en https://www.1001freefonts.com/
+      theme: ThemeData(
+        fontFamily: 'NimbusSans',
+      ),
       routes: {
         'home': (BuildContext context) => const HomePage(),
       },
