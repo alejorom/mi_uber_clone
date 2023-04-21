@@ -7,6 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: SafeArea(
         child: Container(
           decoration: const BoxDecoration(
@@ -17,18 +18,18 @@ class HomePage extends StatelessWidget {
             ),
           ),
           child: Column(
-            children: const <Widget>[
-              ClipperAplicacion(),
-              SizedBox(height: 10.0),
-              TextoTituloRol(),
-              SizedBox(height: 30.0),
+            children: <Widget>[
+              const ClipperAplicacion(containerColor: Colors.white, textoColor: Colors.black),
+              const SizedBox(height: 10.0),
+              const TextoTituloRol(),
+              const SizedBox(height: 30.0),
               AvatarTipoUsuario(avatarUsuario: 'images/pasajero.png'),
-              SizedBox(height: 10.0),
-              TextoTipoUsuario(tipoUsuario: 'Cliente'),
-              SizedBox(height: 30.0),
+              const SizedBox(height: 10.0),
+              const TextoTipoUsuario(tipoUsuario: 'Cliente'),
+              const SizedBox(height: 30.0),
               AvatarTipoUsuario(avatarUsuario: 'images/driver.png'),
-              SizedBox(height: 10.0),
-              TextoTipoUsuario(tipoUsuario: 'Conductor'),
+              const SizedBox(height: 10.0),
+              const TextoTipoUsuario(tipoUsuario: 'Conductor'),
             ],
           ),
         ),
@@ -36,3 +37,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
